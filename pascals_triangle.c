@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int f(int x);
+long long f(int x);
 
 int main()
 {
-    int n,rows,element,work, k;
+    int n,rows,element, k;
+    long long work;
 
     printf("Enter the number number of rows: ");
     scanf("%d", &n);
@@ -23,8 +24,8 @@ int main()
     return 0;
 }
 
-int f(int x){
-    int product = 1, i = x;
+long long f(int x){
+    long long product = 1, i = x;
     while (i > 1){
         product = product * i;
         i -= 1;
